@@ -109,7 +109,8 @@ def download_data():
 
 # Download end
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///QA.db"
+# app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///QA.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://corulwfrydwamg:52d37acd235be9498c6d83eba8dd592bcd505cecc0aa0c60bc384285e27b2d2e@ec2-3-224-125-117.compute-1.amazonaws.com:5432/dee9iqj46lqu5j"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
